@@ -1,0 +1,803 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;700;800;900&amp;display=swap");
+
+/* CSS Codes */
+*{
+	margin: 0 auto;
+    text-align: center;
+    font-family: 'Cairo', sans-serif ;
+    position: relative;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Scroll Style */
+::-webkit-scrollbar{
+  width: 0px;
+  background-color: #060116;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+/* First Page Style */
+.firstPage{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: fit-content;
+  background-color: #060116;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#myVideo {
+  position: absolute;
+  right: 50;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100vh;
+}
+
+/* Header Style */
+.headerLinear{
+  width: 100%;
+  height: 10vh;
+  background-color: #060116c9;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Menu Codes */
+a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_links{
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+  width: max-content;
+  background-color: transparent;
+  margin: 0px 5px;
+  border-radius: 10px;
+  border: #fff solid 1px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;  
+}
+
+.nav_links li:hover{
+  background-color: #fff;
+  color: #060116;
+}
+
+.nav_links li:hover a{
+  color: #060116;
+}
+
+#turnON{
+  background-color: #ffc107;
+  border: #ffc107 solid 1px;
+  color: #060116;
+  font-weight: 700;
+}
+
+.threeLinesLinear{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 1000px){
+  .threeLinesLinear{
+    display: flex;
+    cursor: pointer;
+  }
+
+  .threeLinesLinear .navLine{
+    width: 25px;
+    height: 2.5px;
+    background-color: #060116;
+    margin: 2.5px 0;
+    border-radius: 50px;
+  }
+  .nav_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 9.25vh;
+    background-color: rgb(255, 255, 255);
+    height: 0;
+    width: 70%;
+    z-index: 10;
+    overflow: hidden;
+    margin: 0px 10px 0px 0px;
+    border-radius: 15px;
+    padding: 0px;
+  }
+
+  .nav_links.active{
+    height: 30vh;
+  }
+
+  .nav_links.active a{
+    color: #060116;
+  }
+
+  .nav_links ul{
+    display: block;
+    width: fit-content;
+    text-align: center;
+  }
+  .nav_links li{
+    margin: 5px;
+    width: 160px;
+    background-color: #060116;
+  }
+
+  .nav_links li:hover{
+    margin: 5px 0px 5px 20px;
+    color: #060116;
+    background-color: #ffc107;
+  }
+}
+
+/* NativeBar End Codes */
+.logoLinear{
+  display: flex;
+  padding: 15px 0px;
+}
+
+.logoLinear img{
+  width: 75px;
+}
+
+/* Main Linear For First Page */
+
+.mainLinear1{
+  width: 100%;
+  min-height: 70vh;
+  max-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #060116c9;
+}
+
+.mainLinear1 .titleLinear{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: -5px;
+}
+
+.titleLinear h1 , h2{
+  font-size: 30px;
+  margin: 0px 5px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.titleLinear h2{
+  font-weight: 900;
+  color: #ffc107;
+}
+
+.mainLinear1 h3{
+  letter-spacing: 0px;
+  font-size: 15.5px;
+  color: #fff;
+  margin-top: -5px;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* Social Buttons */
+.socialBtns{
+  height: fit-content;
+  margin: 5px 0px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.socialBtns img{
+  color: #fff;
+  margin: 5px;
+  font-size: 20px;
+  background-color: #060116;
+  padding: 5px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border: #fff 1.5px solid;
+}
+
+.socialBtns img:hover{
+  margin: 0px 5px 10px 5px;
+} 
+
+.socialBtns a{
+  margin: 0px;
+}
+
+/* Arrow Down Style */
+.arrowDown{
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 20vh;
+  background-color: #060116c9;
+}
+
+.arrowDown::before{
+  position: absolute;
+  content: '';
+  background-color: #ffc107;
+  width: 70%;
+  height: 1px;
+  top: 15%;
+  left: 15%;
+}
+
+.arrowDown img{
+  font-family: SolidIcons;
+  background-color: #ffc107;
+  border: #060116 5px solid;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Secound Page */
+#secondPage{
+  min-height: 100vh;
+  max-height: fit-content;
+  width: 100%;
+  background-color: #ffc107;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title{
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  margin: 15px 0px 0px 0px;
+}
+
+.title::before{
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 1px;
+  background-color: var(--color);
+  right: 11%;
+  top: 35%;
+}
+
+ .title p{
+  background-color: var(--color);
+  color: var(--textColor);
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-size: 20px;
+  width: fit-content;
+  font-weight: 700;
+  border: var(--textColor) solid 5px;
+}
+
+/* Services Style */
+.servicesLinear{
+  min-height: 80vh;
+  max-height: fit-content;
+  width: 90%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.servicesCard{
+  position: relative;
+  height: 260px;
+  width: 260px;
+  padding: 5px;
+  background-color: #ffc107;
+  border: #060116 1px solid;
+  border-radius: 10px;
+  margin: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.servicesCard:hover{
+  z-index: 10;
+  margin: 0px 20px 40px 20px;
+  box-shadow: #0601161e 10px 10px 15px 5px;
+}
+
+.servicesCard:hover::before{
+  rotate: 0deg;
+  background-color: transparent;
+}
+
+.servicesCard::before{
+  position: absolute;
+  content: '';
+  width: 250px;
+  height: 250px;
+  background-color: #ffc107;
+  right: 2.5%;
+  rotate: 45deg;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mainServicesCard{
+  background-color: #060116;
+  width: 250px;
+  height: 250px;
+  border-radius: 7.5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5px;
+}
+
+#servicesCardIcon img{
+  height: 100px;
+  width: 100px;
+  margin: 10px 0px;
+}
+
+#servicesCardText{
+  color: #fff;
+  font-size: 17.5px;
+  font-weight: 300;
+  margin: 0px 10px;
+}
+
+/* Third Page Style */
+#thirdPage{
+  width: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+  background-color: #060116;
+}
+
+#thirdPage h1{
+  color: #fff;
+  font-size: 20px;
+  width: 77.5%;
+  text-align: right;
+}
+
+/* Our Works Linear */
+.ourWorksLinear{
+  width: 90%;
+  max-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ourWorkCard{
+  background-color: #fff;
+  margin: 5px 10px;
+  padding: 0px;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  border: #fff solid 1px;
+}
+
+.mainWorksCard{
+  height: 0px;
+  background-color: #ffffffd9;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.ourWorkCard:hover .mainWorksCard{
+  height: 160px;
+}
+
+
+#about{
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0px 5px;
+}
+
+.ourWorksLinear button{
+  background-color: #060116;
+  border: #060116 solid 1px;
+  color: #fff;
+  padding: 2.5px 15px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.ourWorksLinear button:hover{
+  padding: 2.5px 30px;
+}
+
+
+/* button To See More Style */
+.buttonToSeeMore{
+  background-color: #fff;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  border: #fff 1px dashed;
+  stroke-dasharray: 20px;
+  color: #060116;
+}
+
+.buttonToSeeMore:hover{
+  background-color: transparent;
+  color: #fff;
+  padding: 5px 25px;
+}
+
+
+/* Forth Page Style */
+#forthPage{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffc107;
+}
+
+#forthPage h1{
+  font-size: 25px;
+  max-width: 90%;
+}
+
+.cardOfBuyOurServices{
+  width: 700px;
+  max-width: 90%;
+  height: 200px;
+  max-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060116;
+  margin: 10px 0px;
+  border-radius: 20px;
+}
+
+.cardOfBuyOurServices .leftLinearDesign{
+  width: 32.5%;
+  max-width: 300px;
+  height: 90%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.leftLinearDesign i{
+  font-size: 100px;
+  top: 5%;
+  color: var(--iColor);
+}
+
+.leftLinearDesign .text{
+  background-color: #060116;
+  color: #fff;
+  width: 100%;
+  padding: 2.5px 10px 2.5px 40px;
+  left: 10%;
+  bottom: 5%;
+  border-radius: 10px;
+  border: #fff 3px solid;
+}
+
+.leftLinearDesign p{
+  font-weight: 700;
+  font-size: 13px;
+  right: 35%;
+}
+
+.rightLinearDesign{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rightLinearDesign p{
+  color: #fff;
+}
+
+.rightLinearDesign button{
+  border: var(--iColor) 1px solid;
+  background-color: var(--iColor);
+  padding: 2.5px 35px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.rightLinearDesign button:hover{
+  padding: 2.5px 50px;
+}
+
+
+
+/*The Dialog style*/
+
+.modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+}
+
+/*Show Dialog on Click*/
+
+.modal:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Dialog Content Style*/
+.modalcontent{
+  position: relative;
+  background-color: #ffc107;
+  width: 500px;
+  max-width: 75%;
+  padding: 1em 2em;
+  border-radius: 4px;
+}
+
+/*The Close Icon Style*/
+.modalclose{
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding: 0px 5px;
+  background-color: #060116;
+  color: #ffc107;
+  text-decoration: none;
+  font-size: 35px;
+  border-radius: 0px 0px 25px 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.messageUS{
+  position: relative;
+  background-color: #060116;
+  margin: 5px 0px;
+  border: #060116 1px solid;
+  padding: 2.5px 30px;
+  color: #ffc107;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.messageUS::before{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: #060116;
+  bottom: -20%;
+  right: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.messageUS:hover::before{
+  width: 100px;
+  right: 10%;
+}
+
+.messageUS:hover{
+  padding: 2.5px 40px;
+}
+
+
+.mainWeb{
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  background-color: #060116;
+}
+
+
+
+.forgetButton{
+  border: #fff 1px solid;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2.5px 15px;
+  margin: 15px 0px;
+  transition: all 0.3s ease-in-out;
+}
+.forgetButton:hover{
+  margin: 5px 0px 25px 0px;
+  box-shadow: #06011660 5px 5px;
+}
+
+/* CopyRightLinear Style */
+.CopyRightLinear{
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+
+.CopyRightLinear a{
+  width: 250px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CopyRightLinear #copy{
+  margin: 5px 0px;
+  width: 700px;
+  max-width: 90%;
+  transition: all 0.3s ease-in-out;
+}
+
+.CopyRightLinear #copy:hover{
+  color: #ffc107;
+  text-decoration: underline rgb(156, 156, 156);
+}
+
+.theProgrammer{
+  width: fit-content;
+  max-width: 80%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.programmerLogo{
+  width: 35px;
+  height: 35px;
+  background-color: #060116;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.programmerLogo img{
+  width: 30px;
+  height: auto;
+}
+
+.textLinear{
+  width: 0px;
+  height: fit-content;
+  padding: 0px;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+  color: #060116;
+}
+
+.textLinear p{
+  font-size: 10px;
+  margin: 0px 5px -5px 5px;
+  color: #060116;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.textLinear h1{
+  font-size: 15px;
+  margin: -5px 5px 0px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.theProgrammer:hover .textLinear{
+  width: 125px;
+}
+
+.CopyRightLinear #copy{
+  color: #fff;
+}
